@@ -63,7 +63,7 @@ Material:
     - _SecondOffsetTime: 0.02
     - _Smoothness: 0.31
     m_Colors:
-    - _Color: {r: 0.033018887, g: 0.39075705, b: 1, a: 0}
+    - _Color: {r: 0.12758097, g: 0.13876028, b: 0.4433962, a: 0}
     - _FirstMapTiling: {r: 5, g: 5, b: 0, a: 0}
     - _Metalic_Smoothness: {r: 0, g: 0, b: 0, a: 0}
     - _SecondMapTiling: {r: 3, g: 3, b: 0, a: 0}
