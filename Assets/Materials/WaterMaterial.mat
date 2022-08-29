@@ -52,19 +52,29 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Alpha: 0.47
-    - _FirstMapStrength: 4
+    - _Alpha: 1
+    - _EdgeColorStrength: 1.04
+    - _FirstMapStrength: 2
     - _FirstOffsetTime: -0.02
-    - _Metallic: 0.33
+    - _Metallic: 0
     - _NormalContrast: 2
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _SecondMapStrength: 25
+    - _ReflectionNoiseScale: 500
+    - _ReflectionNoiseStrength: 0.1
+    - _ReflectionPOR: 0.38
+    - _ReflectionScale: 0.2
+    - _ReflectionStrength: 5
+    - _SecondMapStrength: 3
     - _SecondOffsetTime: 0.02
-    - _Smoothness: 0.31
+    - _Smoothness: 1
+    - _WaterNoiseScaling: 10
+    - _WaterNoiseSpeed: 0.04
     m_Colors:
-    - _Color: {r: 0.12758097, g: 0.13876028, b: 0.4433962, a: 0}
-    - _FirstMapTiling: {r: 5, g: 5, b: 0, a: 0}
+    - _Color: {r: 0.012571509, g: 0.11320752, b: 0.010145954, a: 1}
+    - _EdgeColor: {r: 0.3047348, g: 0.43002382, b: 0.6037736, a: 1}
+    - _FirstMapTiling: {r: 10, g: 10, b: 0, a: 0}
     - _Metalic_Smoothness: {r: 0, g: 0, b: 0, a: 0}
-    - _SecondMapTiling: {r: 3, g: 3, b: 0, a: 0}
+    - _ReflectionNoiseTiling_1: {r: 10, g: 10, b: 0, a: 0}
+    - _SecondMapTiling: {r: 2, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []
