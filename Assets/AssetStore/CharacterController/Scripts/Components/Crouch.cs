@@ -25,6 +25,9 @@ public class Crouch : MonoBehaviour
     public bool IsCrouched { get; private set; }
     public event System.Action CrouchStart, CrouchEnd;
 
+    [SerializeField] private Animator animator;
+    private const string Crouching = "Crouching"; 
+
 
     void Reset()
     {
@@ -38,6 +41,7 @@ public class Crouch : MonoBehaviour
     {
         if (Input.GetKey(key))
         {
+            animator.SetBool(Crouching,true);
             // Enforce a low head.
             if (headToLower)
             {
@@ -54,6 +58,7 @@ public class Crouch : MonoBehaviour
             // Enforce a low colliderToLower.
             if (colliderToLower)
             {
+                
                 // If we don't have the defaultColliderHeight, get it now.
                 if (!defaultColliderHeight.HasValue)
                 {
@@ -86,6 +91,7 @@ public class Crouch : MonoBehaviour
         }
         else
         {
+            animator.SetBool(Crouching,false);
             if (IsCrouched)
             {
                 // Rise the head back up.
@@ -105,7 +111,7 @@ public class Crouch : MonoBehaviour
                 IsCrouched = false;
                 SetSpeedOverrideActive(false);
                 CrouchEnd?.Invoke();
-            }
+            } 
         }
     }
 
