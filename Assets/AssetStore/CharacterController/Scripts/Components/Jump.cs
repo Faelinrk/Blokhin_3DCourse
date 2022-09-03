@@ -8,6 +8,8 @@ public class Jump : MonoBehaviour
 
     [SerializeField, Tooltip("Prevents jumping when the transform is in mid-air.")]
     GroundCheck groundCheck;
+    [SerializeField] private Animator animator;
+    private const string IsJump = "IsJump";
 
 
     void Reset()
@@ -29,6 +31,7 @@ public class Jump : MonoBehaviour
         {
             rigidbody.AddForce(Vector3.up * 100 * jumpStrength);
             Jumped?.Invoke();
+            animator.SetTrigger(IsJump);
         }
     }
 }
