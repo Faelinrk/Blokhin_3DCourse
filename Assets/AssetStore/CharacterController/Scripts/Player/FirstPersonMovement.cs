@@ -46,7 +46,7 @@ public class FirstPersonMovement : MonoBehaviour
         
         // Get targetVelocity from input.
         Vector2 targetVelocity =new Vector2( Input.GetAxis(Horizontal) * targetMovingSpeed, Input.GetAxis(Vertical) * targetMovingSpeed);
-        if ((Input.GetAxis(Horizontal) > 0 || Input.GetAxis(Vertical) > 0))
+        if ((Input.GetAxis(Horizontal) != 0 || Input.GetAxis(Vertical) != 0))
         {
             animSpeed = IsRunning ? 1 : .5f;
             animator.SetFloat(Speed,animSpeed);
