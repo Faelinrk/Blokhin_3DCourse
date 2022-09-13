@@ -8,8 +8,9 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 99c9720ab356a0642a771bea13969a05
+  m_OcclusionCullingData: {fileID: 36300000, guid: 3056f72fa8093a14a8993f8207f34dcb,
+    type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -2060,6 +2061,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8648056822675249906, guid: 3f68ec52cc50b6f42ab860e6e05ffb55,
+        type: 3}
+      propertyPath: far clip plane
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 8665621241732478016, guid: 3f68ec52cc50b6f42ab860e6e05ffb55,
         type: 3}
       propertyPath: m_RootOrder
@@ -2114,6 +2120,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665903990900954016, guid: 3f68ec52cc50b6f42ab860e6e05ffb55,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.705499
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665903990900954016, guid: 3f68ec52cc50b6f42ab860e6e05ffb55,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.04765696
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665903990900954016, guid: 3f68ec52cc50b6f42ab860e6e05ffb55,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.705499
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665903990900954016, guid: 3f68ec52cc50b6f42ab860e6e05ffb55,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.04765696
+      objectReference: {fileID: 0}
+    - target: {fileID: 8665903990900954016, guid: 3f68ec52cc50b6f42ab860e6e05ffb55,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 8667959237081214952, guid: 3f68ec52cc50b6f42ab860e6e05ffb55,
         type: 3}
